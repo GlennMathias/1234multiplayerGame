@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+	<div class="groupSettings">
+		<div>
+			<label for="user">User ID</label><input type="text" id='user'>
+		</div>
+
+		<div class="createGroup">
+			<div class="generateGroup">
+				<button onclick="createGroup()">Generate Group</button>
+				<div id="genGroupId"></div>
+			</div>
+		</div>
+
+		<div class="joinGroup">
+			<div class="groupDetails">
+				<input type="text" id="groupId">
+				<button onclick="joinGroup()">Join Group</button>
+			</div>
+		</div>
+	</div>
+
+    <div>
+		<canvas id='gameSpace' width='520px' height='520px'>
+		</canvas>
+	</div>
+</body>
+<script src="./game.js">
+</script>
+</html>
